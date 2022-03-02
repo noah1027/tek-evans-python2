@@ -1,0 +1,20 @@
+{% extends "Base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h3>Greetings new owner! Please provide information pertaining to yourself.</h3>
+  <form method="POST">
+      {{ form.hidden_tag() }}
+      {{ form.ownername.label }}{{ form.ownername }}
+     <br>
+      {{ form.ownerage.label }}{{ form.ownerage }}
+      <br>
+      {{ form.phone.label }}{{ form.phone }}
+      <br>
+      {{ form.address.label }}{{ form.address }}
+
+      <br>
+      {{ form.submit() }}
+
+  </form>
+</div>
+{% endblock %}

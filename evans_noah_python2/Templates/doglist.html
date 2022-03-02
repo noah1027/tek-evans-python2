@@ -1,0 +1,14 @@
+{% extends "Base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Meet all of the dogs registered with Canine Central!</h1>
+    {% for dog in Puppys  %}
+    <p>------------------------------------------------------ </p>
+    <li>Dog's Name : {{dog.dogname}}</li>
+    <li>Dog's Age: {{dog.dogage}}</li>
+    <li>Dog's Breed: {{dog.breed}}</li>
+    <li>Dog's Gender: {{dog.gender}}</li>
+    <li>Dog's Owner ID: {{dog.owner_id}}</li>
+{% endfor %}
+</div>
+{% endblock %}

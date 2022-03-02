@@ -1,0 +1,21 @@
+{% extends "Base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h4>Greetings owner! Please provide information pertaining to your canine.</h4>
+  <form method="POST">
+      {{ form.hidden_tag() }}
+      {{ form.dogname.label }}{{ form.dogname }}
+     <br>
+      {{ form.dogage.label }}{{ form.dogage }}
+      <br>
+      {{ form.breed.label }}{{ form.breed }}
+      <br>
+      {{ form.gender.label }}{{ form.gender }}
+      <br>
+      {{ form.owner_id.label }}{{ form.owner_id }}
+      <br>
+      {{ form.submit() }}
+
+  </form>
+</div>
+{% endblock %}
