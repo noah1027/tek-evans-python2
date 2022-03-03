@@ -14,6 +14,7 @@ app.config['SECRET_KEY'] = 'mysecretkey'
 db = SQLAlchemy(app)
 Migrate(app, db)
 
+
 class Puppy(db.Model):
     __tablename__ = 'puppies'
     id = db.Column(db.Integer,primary_key=True)
